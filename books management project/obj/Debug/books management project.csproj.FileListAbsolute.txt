@@ -1,0 +1,10 @@
+c:\users\dell\documents\visual studio 2012\Projects\books management project\books management project\bin\books management project.dll
+c:\users\dell\documents\visual studio 2012\Projects\books management project\books management project\bin\books management project.pdb
+c:\users\dell\documents\visual studio 2012\Projects\books management project\books management project\obj\Debug\books management project.csprojResolveAssemblyReference.cache
+c:\users\dell\documents\visual studio 2012\Projects\books management project\books management project\obj\Debug\books management project.dll
+c:\users\dell\documents\visual studio 2012\Projects\books management project\books management project\obj\Debug\books management project.pdb
+C:\testing\testing\books management project\obj\Debug\books management project.csprojResolveAssemblyReference.cache
+C:\testing\testing\books management project\obj\Debug\books management project.dll
+C:\testing\testing\books management project\obj\Debug\books management project.pdb
+C:\testing\testing\books management project\bin\books management project.dll
+C:\testing\testing\books management project\bin\books management project.pdb

@@ -1,0 +1,126 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.Master.cs" Inherits="books_management_project.viewers.admin.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Crystal Book shop-Admin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../Assites/images/IMG_20230724_090427.ico" />
+    <link rel="stylesheet" href="../../Assites/lib/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="../../Assites/lib/custom/js/all.min.css" />
+    <link rel="stylesheet" href="../../Assites/lib/custom/js/fontawesome.min.css" />
+    <style>
+        
+        .label {
+           
+            background:#5FBEC6;
+            width:16%;
+           padding-bottom:15%;
+           color:white;
+           position:absolute;
+           display:flexbox;
+            left:0px;
+            font-family:Arial;
+            text-transform:uppercase;
+           
+           
+        }
+        .img {
+             position:absolute;
+        }
+        .styeeles {
+            top:100px;
+        }
+        .benner {
+            display:flexbox;
+            position:absolute;
+            border:2px solid black;
+            border-radius:50%;
+            text-align:center;
+            font-size:10px;
+        }
+        
+        </style>
+   
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div class="container-fluid">
+        <div class="row">
+            <div class="p-3">
+            <div class="col-2 label">
+               <div class="p-4 styeeles">    
+                   <p class="form-text" style="font-weight:bold">Admin:<label id="adminse" runat="server" class="form-text" style="position:absolute;color:black;word-spacing:2px">&nbsp;value of user:</label></p>
+                     <div class="mb-3" style="margin-top:10px">
+                  
+                         <img src="../../Assites/images/IMG_20230724_090427.ico" height="40"  class="benner"/>
+                                       <a href="Books.aspx"><label style="margin-left:40px;color:white;margin-top:13px;font-size:11px;font-weight:300;color:#06f5f5;cursor:pointer; width: 154px;">&nbsp;Crystal BOOKS</label></a>                            
+                    
+                         </div>
+                    <div class="mb-3" style="margin-top:150px">
+                  
+                                       <a href="Books.aspx"><i class="fa-solid fa-book" style="color:black;font-size:28px"></i><label style="margin-left:20px;color:white; width: 79px; cursor:pointer;">BOOKS</label></a>                            
+                    
+                         </div>
+                    <div class="mb-3" style="margin-top:20px">
+                  
+                      
+                                       <a href="Author.aspx"><i class="fa fa-user" style="color:black;font-size:28px;position:absolute"></i><label style="margin-left:40px;color:white; width: 107px; cursor:pointer;">Author</label></a>                            
+                    
+                         </div>
+                    <div class="mb-3" style="margin-top:20px">
+                  
+                       
+                                       <a href="seller.aspx"><i class="fa-solid fa-store" style="color:black;font-size:28px;position:absolute"></i><label style="margin-left:40px;color:white; width: 104px; cursor:pointer;">sellers</label></a>                            
+                    
+                         </div>
+                    <div class="mb-3" style="margin-top:20px">
+                  
+                      
+                                       <a href="categories.aspx"><i class="fa fa-list-alt" style="color:black;font-size:28px;position:absolute"></i><label style="margin-left:40px;color:white; width: 86px; cursor:pointer;">categories</label></a>                            
+                    
+                         </div>
+                    <div class="mb-3" style="margin-top:20px">
+                  
+                       
+                                       <a href="subscriber.aspx"><i class="fa-solid fa-bell" style="color:black;font-size:28px;position:absolute"></i><label style="margin-left:40px;color:white; width: 91px; cursor:pointer;">subscribers</label></a>                            
+                    
+                         </div>
+                    <div class="mb-3" style="margin-top:20px">
+                  
+                        
+                                       <a href="contecct.aspx"><i class="fa fa-address-book" style="color:black;font-size:28px;position:absolute"></i><label style="margin-left:40px;color:white; width: 91px; cursor:pointer;">Contec</label></a>                            
+                    
+                         </div>
+                   <div class="mb-3" style="margin-top:20px">
+                  
+                        
+                                       <a href="Bill.aspx"><i class="fa-solid fa-money-bill" style="color:black;font-size:28px;position:absolute"></i><label style="margin-left:40px;color:white; width: 91px; cursor:pointer;">Bills</label></a>                            
+                    
+                         </div>
+
+                    <div class="mb-3" style="margin-top:20px">
+                  
+                        
+                                       <a href="../log.aspx"><i class="fa fa-sign-out" style="color:black;font-size:28px;position:absolute"></i><label style="margin-left:40px;color:white; width: 95px; cursor:pointer;">Log out</label></a>                            
+                    
+                         </div>
+                    </div>
+                &nbsp;</div>
+    <div style="height: 100%; width: 797px">
+        <asp:ContentPlaceHolder ID="myContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        
+    </div>
+                </div>
+     </div>
+        </div>
+    </form>
+     <div style="text-align:center;font-size:17px;font-family:Arial;font-weight:bold;margin-top:49.5%;background-color:black;color:#fff;padding:5px">
+            &copy Design And Develop By: Akash Odedara&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Guided By : AVADHTUTOR (SIR RIPAL PANDYA).
+        </div>
+</body>
+</html>

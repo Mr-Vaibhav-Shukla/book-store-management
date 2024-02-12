@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ClientView.master.cs" Inherits="books_management_project.viewers.client.ClientView" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   
+     <style type="text/css">
+        .subtext {
+            border:2px solid black;
+            width:15rem;
+            border-radius:10px;
+            text-align:center;
+            padding:1px;
+        }
+        .subbutton {
+           
+            width:8rem;
+            margin-top:18px;
+            margin-left:15px;
+            border-radius:30px;
+            border:2px solid black;
+            background-color:teal;
+            opacity:0.7;
+            
+        }
+        .subbutton:hover {
+            color:#44b89d;
+            background-color:#063547;
+            border-color:#44b89d;
+            border:1px solid;
+            text-decoration:none;
+            transition:all .2s;
+        }
+    </style>
+    <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--url pic link-->
+     <link rel="shortcut icon" type="image/x-icon" href="../../Assites/images/IMG_20230724_090427.ico" />
+    <title>Crystal Book shop</title>
+    <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="../../Assites/lib/custom/css/bootstrap.css" />
+  <link href="../../Assites/lib/custom/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="../../Assites/lib/custom/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="../../Assites/lib/custom/css/responsive.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container" style="max-width:100%">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Crystal Book Shop
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link pl-lg-0" href="index.aspx">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="category.aspx">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.aspx">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.aspx"> Order </a>
+              </li>
+                 
+              <li class="nav-item">
+                <a class="nav-link" href="contect.aspx">Contact Us</a>
+              </li>
+                <li class="nav-item">
+                     <form id="form1" runat="server">
+                         <div>
+               <asp:Button id="logout" runat="server" class="nav-link" Text="Logout" BackColor="#063547" BorderStyle="None" OnClick="logout_Click"/>
+                             </div>
+              </li>
+            </ul>
+           <p style="color:white;font-weight:bold;margin-left:5%;margin-top:4%;word-spacing:1px">User:<label id="user" runat="server">&nbsp;value of user</label></p>
+          </div>
+        </nav>
+        
+      </div>
+    </header>
+      
+
+    
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="info_section layout_padding2" style="margin-top:5%">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_detail">
+            <h4>
+              About Us
+            </h4>
+            <p>
+              Hello, I am Akash odedara.<br />I am curentlly study in BCA at SSSDIIT-Collage Junagadh.<br />
+            </p>
+            <div class="info_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_contact">
+            <h4>
+              
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Junagadh
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91 7211183943
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  akmer1811@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info-col">
+          <div class="info_contact">
+            <h4>
+              Newsletter
+            </h4>
+                 <input type="text" placeholder="Enter email" class="subtext" runat="server" id="subtxt" />
+              <br /><asp:Button ID="Button1" runat="server" Text="Subscribe" CssClass="subbutton" OnClick="Button1_Click"></asp:Button>
+            </form>
+          </div>
+        </div>
+        
+ </div>
+        <div style="text-align:center;font-size:17px;font-family:Arial;font-weight:bold">
+            &copy Design And Develop By: Akash Odedara&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Guided By : AVADHTUTOR (SIR RIPAL PANDYA).
+        </div>
+     <script src="../../Assites/lib/custom/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="../../Assites/lib/custom/js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="../../Assites/lib/custom/js/custom.js"></script>
+    
+</body>
+</html>
